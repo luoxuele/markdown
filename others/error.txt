@@ -1,0 +1,9 @@
+[root@VM_0_9_centos ~]# yum update
+Qcloud centos AppStream - x86_64                                           1.6 kB/s | 175  B     00:00
+Error: Failed to synchronize cache for repo 'AppStream'
+
+
+解决办法：
+https://mirrors.tuna.tsinghua.edu.cn/help/centos/
+改用清华源，
+sudo yum makecache
