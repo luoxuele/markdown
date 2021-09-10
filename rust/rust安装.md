@@ -13,3 +13,11 @@ registry = "https://github.com/rust-lang/crates.io-index"
 replace-with = 'ustc'
 [source.ustc]
 registry = "git://mirrors.ustc.edu.cn/crates.io-index"
+
+
+
+echo "export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static" >> .bashrc
+echo "export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup" >> .bashrc
+
+
+

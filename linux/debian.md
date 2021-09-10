@@ -29,3 +29,4 @@
     psmisc(pstree)
     screen
     curl
+    gcc
