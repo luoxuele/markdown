@@ -6,4 +6,19 @@
 
 
 # 配置文件
-    ~/.config/code-server/config
+    ~/.config/code-server/config.yaml
+
+//cat /usr/lib/systemd/system/code-server.service
+[Unit]
+Description=code-server
+After=network.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/code-server --bind-addr 0.0.0.0:8888
+Restart=always
+User=root
+
+[Install]
+WantedBy=default.target
+
