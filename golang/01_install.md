@@ -17,3 +17,7 @@
     2. 安装go tools插件
        1. ctrl+shift+p 搜索go install
        2. 编写.go文件，等弹出安装tools提示
+
+# 编译
+go build [-o output] [build flags] [packages]
+
