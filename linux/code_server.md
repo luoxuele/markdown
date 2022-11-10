@@ -7,7 +7,8 @@
 # ipv6启动
 code-server --bind-addr [::]:80
 
-
+# ssl
+sed -i.bak 's/cert: false/cert: true/' ~/.config/code-server/config.yaml
 
 # 配置文件
     ~/.config/code-server/config.yaml

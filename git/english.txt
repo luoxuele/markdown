@@ -1,0 +1,10 @@
+origin
+fetch
+push
+workflow
+
+working directory
+staging area
+git repository
+
+just reference

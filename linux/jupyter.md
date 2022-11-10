@@ -1,3 +1,11 @@
+https://github.com/jupyter/notebook
+pip --version
+pip install notebook
+https://jupyter-notebook.readthedocs.io/en/stable/public_server.html
+jupyter notebook password
+
+
+
 jupyter notebook --allow-root --ip=0.0.0.0 --port=8889 password
 
 //生成配置文件
@@ -35,4 +43,24 @@ WantedBy=default.target
 
 
 
+# 快捷键
+h   键盘快捷键
+Esc 命令模式
+enter   编辑模式
 
+m   markdown
+y   代码块
+shift+enter 如果是markdown单元格，就会渲染
+
+L 行数
+
+Shift-Enter
+: 运行单元格, 选择下面的单元格
+Ctrl-Enter
+: 运行选中的单元格
+Alt-Enter
+: 运行单元格并且在下面插入单元格
+
+
+b 在下面增加单元格
+dd 删除选中代码块

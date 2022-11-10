@@ -21,3 +21,14 @@
 # 编译
 go build [-o output] [build flags] [packages]
 
+
+
+go env -w GO111MODULE=on
+go get github.com/google/gopacket
+
+go mod init hello
+
+// 网络流量抓包库 gopacket
+// https://zhuanlan.zhihu.com/p/361737169
+// https://gocn.vip/topics/8RMqWqHnR2
+// https://pkg.go.dev/github.com/google/gopacket/pcap#hdr-Reading_Live_Packets
