@@ -21,3 +21,6 @@ vmrun -T ws stop "/home/luoxue/vmware/Windows 10 x64/Windows 10 x64.vmx" nogui
 vmrun -T ws stop "/home/luoxue/vmware/Windows 10/Windows 10.vmx" nogui
 vmrun -T ws -vp luoxue123 stop "/home/luoxue/vmware/win11/win11.vmx" nogui
 vmrun -T ws stop "/home/luoxue/vmware/Windows Server 2016/Windows Server 2016.vmx" nogui
+
+vmrun -T ws start `d:\Virtual Machines\win10_22h2\win10_22h2.vmx` nogui
+vmrun -T ws start "D:/Virtual Machines/win10_22h2/win10_22h2.vmx" nogui

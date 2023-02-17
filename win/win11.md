@@ -37,3 +37,13 @@ DefaultUserName admin
 https://www.makeuseof.com/windows-11-missing-auto-login-fix/
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device
 DevicePasswordLessBuildVersion 0
+
+
+# 取消锁屏密码
+https://www.isumsoft.com/windows-10/how-to-disable-lock-screen-in-windows-10.html
+//知识关闭锁屏
+
+
+# 多语言
+https://www.bennorummens.com/products/windows-10/how-to-create-a-multi-language-windows-10-image/
+https://learn.microsoft.com/zh-cn/windows-hardware/manufacture/desktop/add-language-packs-to-windows?view=windows-11

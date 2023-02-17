@@ -1,0 +1,26 @@
+ sudo dpkg -i aliyundrive-webdav_1.10.4_amd64.deb
+
+screen -S aliyun
+aliyundrive-webdav -p 1234 --host :: 
+aliyundrive-webdav -p 1234 --host :: --auth-user luoxue --auth-password Luoxue123
+
+sudo nano /etc/systemd/system/aliyundrive-webdav.service
+sudo systemctl enable aliyundrive-webdav.service --now
+
+sudo systemctl daemon-reload
+sudo systemctl restart aliyundrive-webdav.service
+sudo systemctl status aliyundrive-webdav.service
+
+sudo systemctl disable aliyundrive-webdav.service
+Removed /etc/systemd/system/multi-user.target.wants/aliyundrive-webdav.service.
+sudo systemctl stop  aliyundrive-webdav.service
+sudo systemctl status aliyundrive-webdav.service
+
+
+
+# 上传下载
+curl --user 账户名:密码 -T 文件名 http://localhost:1234/Udemy/
+curl --user luoxue:Luoxue123 http://127.0.0.1:1234/webadv/ -T ipc-home-20230203-084644.mp4
+
+# 挂载
+sudo mount -t davfs http://localhost:1234/ /mnt/webdav

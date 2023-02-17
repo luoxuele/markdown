@@ -14,6 +14,11 @@ https://zhuanlan.zhihu.com/p/490499922
    用户名密码： luoxue Luoxue123
 
 
+# linux 挂载webdav
+apt install davfs2
+mount -t davfs http://localhost:1234/ /mnt/webdav
+
+
 apt install gcc -y
 export http_proxy=http://192.168.10.133:10811
 export https_proxy=http://192.168.10.133:10811
