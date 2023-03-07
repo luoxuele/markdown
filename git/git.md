@@ -11,6 +11,9 @@
 
     git remote add <name> <url>
 
+git config --global user.email "tianchang1994@gmail.com"
+git config --global user.name luoxuele
+
 # https
 echo "# md" >> README.md
 git init

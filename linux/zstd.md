@@ -2,6 +2,7 @@ wget https://github.com/facebook/zstd/releases/download/v1.5.2/zstd-1.5.2.tar.gz
 tar xaf zstd-1.5.2.tar.gz
 
 apt install liblzma5 liblzma-dev liblz4-dev
+apt install gcc
 
 
 make

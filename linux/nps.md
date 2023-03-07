@@ -33,6 +33,10 @@ https://github.com/ehang-io/nps/releases/download/v0.26.10/linux_amd64_server.ta
     // 2. 注册安装
     sudo ./npc install -server=82.156.32.144:8024 -vkey=7glofi2dnqlgqcfh -type=tcp
 
-    npc [stop | start]
+    sudo npc [stop | start]
 
     ./npc uninstall  //卸载注册
+
+
+# 树莓派 客户端
+wget https://github.com/ehang-io/nps/releases/download/v0.26.10/linux_arm64_client.tar.gz
