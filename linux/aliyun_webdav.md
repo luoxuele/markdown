@@ -24,3 +24,11 @@ curl --user luoxue:Luoxue123 http://127.0.0.1:1234/webadv/ -T ipc-home-20230203-
 
 # 挂载
 sudo mount -t davfs http://localhost:1234/ /mnt/webdav
+
+
+windows:
+    添加一个网络位置 或者 映射网络驱动器
+    http://192.168.10.202:1234/
+    luoxue Luoxue123
+
+    https://docs.qnap.com/operating-system/qts/4.5.x/zh-cn/GUID-31D5B05F-F29E-4D61-9758-C8CF839C14FD.html
