@@ -153,4 +153,62 @@ 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
 git clone https://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@github.com/luoxuele/my_ddns.git
 
 
+git remote -v 
+origin  https://github.com/luoxuele/network_lab.git (push)
+
+cat .git\config
+git remote set-url --push origin https://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@github.com/luoxuele/network_lab.git
+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
+
 ## ssh
+ssh-keygen -t rsa -b 4096 -C "tianchang1994@gmail.com"
+
+Your identification has been saved in C:\Users\admin/.ssh/id_rsa.
+Your public key has been saved in C:\Users\admin/.ssh/id_rsa.pub.
+
+cat .ssh\id_rsa.pub 
+### 把公钥public key 填入到github
+settings -> SSH and GPG keys -> New SSH key
+
+//测试
+ssh -T git@github.com
+
+
+# pat
+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
+Expires on Wed, Apr 10 2024.
+
+git remote set-url --push origin https://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@github.com/luoxuele/network_lab.git
+
+git remote set-url origin https://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@github.com/luoxuele/network_lab.git
+
+
+
+git remote set-url  origin https://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@github.com/luoxuele/network_lab.git
+
+git remote set-url origin https://github.com/luoxuele/network_lab.git
+git remote -v
+
+git clone https://github.com/luoxuele/network_lab.git
+
+https
+git push 用用户名和token登录，密码就是token
+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
+
+//保存密码
+git config --global credential.helper store
+
+//密码保存的位置
+ cat ~/.git-credentials
+https://luoxuele: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@github.com
+
+
+//配置文件
+git config -e
+git config -e --local
+git config -e --global
+git config -e --system
+
+local 在 .git/config
+global 在   ~/.gitconfig
+system 在  /etc/gitconfig

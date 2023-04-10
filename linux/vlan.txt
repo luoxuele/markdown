@@ -1,0 +1,33 @@
+vlan { vlan-id1 [ to vlan-id2 ] | all }
+port link-type {access | hybrid | trunk }
+port access vlan vlan-id
+port trunk permit vlan { vlan-list | all }
+port trunk pvid vlan vlan-id
+port hybrid vlan vlan-list { tagged | untagged }
+port hybrid pvid vlan vlan-id
+
+[S1]vlan 10
+[S1-vlan10]name manager
+[S1-vlan10]description 这是一个管理员vlan
+[S1-vlan10]display this
+
+[S1]show vlan brief
+[S1]display vlan brief
+
+//语法糖 ，相当于在g1/0/10-20 这11个端口的接口视图下执行port access vlan 10 ,端口的link type 必须是access,h3c交换机默认也是access
+[S1-vlan10]port GigabitEthernet 1/0/10 to GigabitEthernet 1/0/20
+
+[S1-GigabitEthernet1/0/21]port access vlan 10
+[S1-GigabitEthernet1/0/22]port link-type trunk
+
+# keyword
+h3c create vlan
+port link type
+
+
+https://www.h3c.com/en/Support/
+https://www.h3c.com/en/Support/Resource_Center/Technical_Documents/Switches/
+https://www.h3c.com/en/Support/Resource_Center/EN/Switches/Catalog/S6850/S6850/
+https://www.h3c.com/en/Support/Resource_Center/EN/Switches/Catalog/S5560X/S5560X-EI/
+
+

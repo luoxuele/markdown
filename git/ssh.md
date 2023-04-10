@@ -24,3 +24,6 @@ C:\Users\admin\Documents\git>ssh -T git@github.com
 Hi luoxuele! You've successfully authenticated, but GitHub does not provide shell access
 
 C:\Users\admin\Documents\git>git clone git@github.com:luoxuele/network_lab.git
+
+//删除公钥 （错误的）
+ssh-keygen -f "/root/.ssh/known_hosts" -R "github.com"
