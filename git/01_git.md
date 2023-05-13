@@ -194,6 +194,8 @@ git clone https://github.com/luoxuele/network_lab.git
 https
 git push 用用户名和token登录，密码就是token
 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
+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
+
 
 //保存密码
 git config --global credential.helper store
@@ -212,3 +214,11 @@ git config -e --system
 local 在 .git/config
 global 在   ~/.gitconfig
 system 在  /etc/gitconfig
+
+git remote set-url --push origin https://luoxuele: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@github.com/luoxuele/network_lab
+git remote set-url --push origin https://github.com/luoxuele/network_lab
+
+
+
+git clone https://github.com/luoxuele/network_lab
+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

@@ -1,0 +1,53 @@
+# student:
+#   name: chen
+#   age: 18
+#   sex: 男
+#   class: 11
+
+# Cat:
+#   name: 小花
+#   age: 3
+#   length: 11.2
+
+# integer float string bollean
+# age: 28
+# length: 22.2
+
+# name: 田昌
+# name2: "田昌2"
+# name3: '田昌3'
+
+# isTrue: true
+# isTrue2: True
+# isEnabled: false
+
+
+# array list
+# key1:
+#   - value1
+#   - value2
+#   - 222
+#   - 22.3
+
+# key2: [1,2,3,4,5,"hello"]
+
+# key3: [1,2,3,4,5,
+# "hello"
+# ,"卧槽"]
+
+[one,two,three,four]
+
+
+# set
+# numbers:!! set
+# ? one
+# ? two
+# ? three
+
+# numbers: !!set {one, two, three}
+
+# numbers:
+#   one: null
+#   two: null
+#   three: null
+
