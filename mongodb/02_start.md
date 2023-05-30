@@ -31,3 +31,30 @@
     exit
     .exit
     quit
+
+
+
+# xxx
+show dbs;
+use flights
+
+curly braces
+underscore
+duplicate key
+schema
+
+
+db.flightData.insertOne(
+    {
+    "departureAirport": "MUC",
+    "arrivalAirport": "SFO",
+    "aircraft": "Airbus A380",
+    "distance": 12000,
+    "intercontinental": true
+  }
+)
+
+db.flightData.find()
+db.flightData.find().pretty()
+
+
