@@ -141,3 +141,11 @@ WantedBy=multi-user.target
 sudo systemctl start timestamp.service
 sudo systemctl status timestamp.service
 journalctl -xe
+
+
+
+# log
+journalctl --disk-usage
+journalctl --vacuum-time 1w //只保留one week
+journalctl --vacuum-time=1w
+journalctl --vacuum-size=500M
