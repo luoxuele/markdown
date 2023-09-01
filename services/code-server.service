@@ -1,0 +1,13 @@
+[Unit]
+Description=code-server
+After=network.target
+
+[Service]
+Environment="SHELL=/bin/bash"
+Type=exec
+ExecStart=/usr/bin/code-server
+Restart=always
+User=root
+
+[Install]
+WantedBy=default.target

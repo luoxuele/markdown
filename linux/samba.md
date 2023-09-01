@@ -31,3 +31,66 @@ smbclient -L localhost
 network -> Map Network Drive
 \\192.168.1.200\luoxue
 
+
+
+
+# rhel
+sudo dnf install samba
+sudo systemctl status smb
+sudo systemctl enable smb --now
+
+## 临时关闭friewalld 和selinux
+systemctl disable firewalld
+setenforce 0
+getenforce //查看
+
+
+sudo nano /etc/samba/smb.conf
+[download]
+        comment = Private Files
+        path = /download
+        valid users = luoxue
+        guest ok = no
+        writable = yes
+        browsable = yes
+
+
+sudo testparm
+sudo systemctl restart smb
+
+sudo firewall-cmd --permanent --add-service=samba
+sudo firewall-cmd --reload
+sudo firewall-cmd --list-services
+
+sudo semanage fcontext -a -t samba_share_t "/download(/.*)?"
+sudo restorecon -Rv /download/
+sudo semanage fcontext -a -t etc_t "/etc/samba/smb.conf"
+sudo restorecon /etc/samba/smb.conf
+
+
+sudo smbpasswd -a luoxue
+
+\\192.168.10.129
+
+
+## 完整配置
+dnf install samba samba-client cifs-utils
+
+useradd luoxue
+smbpasswd -a luoxue
+
+mkdir -p /var/share/samba
+chown -R luoxue:luoxue /var/share/samba
+chmod -R 755 /var/share/samba
+ls -ld /var/share/samba/
+
+[share]
+        path = /var/share/samba
+        writable = yes
+        browsable = yes
+        guest ok = yes
+        read only = no
+
+
+smbclient -L //localhost/
+\\192.168.18.130\share

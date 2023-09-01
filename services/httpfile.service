@@ -1,0 +1,13 @@
+[Unit]
+Description=httpfile
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -m http.server -b :: 8000
+WorkingDirectory=/download
+Restart=always
+User=luoxue
+
+[Install]
+WantedBy=default.target

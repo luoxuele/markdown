@@ -1,0 +1,14 @@
+[Unit]
+Description=ddns
+After=network.target
+
+[Service]
+Type=simple
+# ExecStart=/home/luoxue/git/golang/ddns/ddns
+ExecStart=/home/luoxue/git/golang/ddns/ddns
+WorkingDirectory=/home/luoxue/git/golang/ddns/
+Restart=always
+User=root
+
+[Install]
+WantedBy=default.target
