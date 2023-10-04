@@ -222,3 +222,9 @@ git remote set-url --push origin https://github.com/luoxuele/network_lab
 
 git clone https://github.com/luoxuele/network_lab
 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
+
+
+
+https://luoxuele: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@github.com/luoxuele/network_lab.git
+
+git remote set-url --push origin https://luoxuele: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@github.com/luoxuele/network_lab.git
