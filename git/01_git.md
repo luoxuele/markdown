@@ -228,3 +228,12 @@ github_pat_11AD2KZYI0KJJALNWYodhl_0B1jrPvVnI2pdZTGt1dICL0a5T7wMp6FioOQbXmLlbnZIH
 https://luoxuele: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@github.com/luoxuele/network_lab.git
 
 git remote set-url --push origin https://luoxuele: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@github.com/luoxuele/network_lab.git
+
+
+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
+
+Make sure to copy your personal access token now as you will not be able to see this again.
+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
+Expires on Sat, Oct 5 2024.
+
+git remote set-url --push origin https://luoxuele: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@github.com/luoxuele/network_lab.git
