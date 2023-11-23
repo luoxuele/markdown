@@ -236,4 +236,6 @@ Make sure to copy your personal access token now as you will not be able to see 
 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
 Expires on Sat, Oct 5 2024.
 
-git remote set-url --push origin https://luoxuele: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@github.com/luoxuele/network_lab.git
+
+
+https://docs.github.com/zh/authentication/keeping-your-account-and-data-secure/about-authentication-to-github
