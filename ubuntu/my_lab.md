@@ -68,7 +68,7 @@ sudo apt install tftpd-hpa -y
 sudo systemctl status tftpd-hpa.service
 
 sudo nano /etc/default/tftpd-hpa
-cat /etc/default/tftpd-hpahttps://docs.conda.io/projects/miniconda/en/latest/
+cat /etc/default/tftpd-hpa
 # /etc/default/tftpd-hpa
 
 TFTP_USERNAME="tftp"
