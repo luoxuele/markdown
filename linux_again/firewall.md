@@ -33,3 +33,7 @@
     sudo firewall-cmd --zone=public --list-all
     // 加了 --permanent后，并没有立即生效
     sudo cat /etc/firewalld/zones/public.xml
+
+
+    # nstables
+    nft list ruleset | less

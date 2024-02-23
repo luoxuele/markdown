@@ -68,7 +68,11 @@ sudo semanage fcontext -a -t etc_t "/etc/samba/smb.conf"
 sudo restorecon /etc/samba/smb.conf
 
 
-sudo smbpasswd -a luoxue
+//添加用户
+sudo smbpasswd -a luoxue 
+
+//修改密码
+sudo smbpasswd username
 
 \\192.168.10.129
 
@@ -91,6 +95,30 @@ ls -ld /var/share/samba/
         guest ok = yes
         read only = no
 
+[download]
+        comment = Private Files
+        path = /download
+        valid users = luoxue
+        guest ok = no
+        writable = yes
+        browsable = yes
+
+[d]
+        comment = Private Files
+        path = /mnt/d
+        valid users = luoxue
+        guest ok =  no
+        writable = yes
+        browsable = yes
+
 
 smbclient -L //localhost/
 \\192.168.18.130\share
+
+
+
+# linux挂载samba
+apt install smbclient cifs-utils
+
+// 命令挂载
+mount -t cifs //127.0.0.1/d /root/d -o port=6445,username=luoxue
