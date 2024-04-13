@@ -1,7 +1,9 @@
 https://computingforgeeks.com/how-to-configure-samba-share-on-debian/
 https://www.samba.org/samba/docs/old/Samba3-HOWTO/install.html
 
-sudo apt install -y samba smbclient cifs-utils
+
+# 1. 安装samba服务
+        sudo apt install -y samba smbclient cifs-utils
 
 
 sudo vim /etc/samba/smb.conf
@@ -16,6 +18,9 @@ sudo vim /etc/samba/smb.conf
     fore directory mode = 770
     inherit permissions = yes
 
+# 2. 设置用户密码
+        //pdbedit -L -v  查看samba用户数据库
+cat /etc/group | grep -i sambashare
 sudo groupadd smbshare
 sudo usermod -a -G smbshare luoxue //追加到smbshare组中
 
@@ -122,3 +127,9 @@ apt install smbclient cifs-utils
 
 // 命令挂载
 mount -t cifs //127.0.0.1/d /root/d -o port=6445,username=luoxue
+
+
+ mount -t cif //137.175.28.139/root /mnt/rak username=root
+
+mount -t cifs -o port=6445,username=root,password=Luoxue123 //137.175.28.139/root /mnt/rak
+umount /mnt/rak
